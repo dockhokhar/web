@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color: Pink;">
-    <img src="m.webp" width="200">
-    <h1 style="text-align: center;">Umar M. Khokhar</h1>
+    
+    <title>Apple</title>
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+        body{
+            font-family: Arial, Helvetica, sans-serif; background: #fff;
+        }
+        header{
+            background: wheat; color:#fff; padding:15px 10%;
+            display: flex; justify-content: space-between;align-items: center;position: sticky;top:0%; z-index:10;
+        }
+        header a{
+            color:black;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+        h1{
+            text-align: center; margin: 40px; font-size:40px;
+        }
+        .product-grid{
+            display: grid; grid-template-columns: repeat(3, 1fr);gap:20px;padding:0 10% 50px 10%;
+        }
+        .card{
+            background: whitesmoke;border-radius: 20px;padding: 30px;text-align: center;
+            transition: transform 0.5s ease;
+        }
+        .card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+.card img{
+    width:100px;
+    height: 200px;
+    object-fit: contain;
+    transition: 0.5s;
 
-    <h1>Objective</h1>
-    <h1>Education</h1>
-    <ol> <li>BSIT</li>
-    <li>MSIT</li></ol>
-    <h1>Job</h1>
-    <h1>Tools</h1>
-    <h1>Social Media</h1>
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.buy-btn{
+    display: inline-block;background: grey;color: white;
+    padding: 10px 20px; border-radius: 20px; text-decoration: none; margin-top: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <nav>
+            <a href="#">iPhone</a>
+            <a href="#">Mac</a>
+            <a href="#">Watch</a>
+        </nav>
+    </header>
+    <h1>Latest Tech. On Sale</h1>
+    <div class="product-grid">
+        <div class="card"><img src="iphone17.webp"><h3>iPhone 17</h3><a href="#" class=buy-btn>Buy</a></div>
+        <div class="card"><img src="macbook.webp"><h3>iPhone 17</h3><a href="#" class=buy-btn>Buy</a></div>
+         <div class="card"><img src="watch.webp"><h3>iPhone 17</h3><a href="#" class=buy-btn>Buy</a></div>
+          <div class="card"><img src="ipad.webp"><h3>iPhone 17</h3><a href="#" class=buy-btn>Buy</a></div>
+          <div class="card"><img src="imac.webp"><h3>iPhone 17</h3><a href="#" class=buy-btn>Buy</a> </div>
+            <div class="card"><img src="airpod.jpeg"><h3>AirPods</h3><a href="#" class="buy-btn">Buy</a></div>
+    </div>
 </body>
 </html>
